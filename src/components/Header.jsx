@@ -6,6 +6,7 @@ export default function Header({ currentView }) {
     switch (currentView) {
       case 'dashboard': return 'Dashboard Overview';
       case 'banks': return 'Question Banks Manager';
+      case 'verbal': return 'Verbal Ability';
       default: return 'Overview';
     }
   };

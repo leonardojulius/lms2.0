@@ -298,3 +298,44 @@
   margin-top: -1rem;
   margin-bottom: 1rem;
 }
+
+/* Tree Component */
+.tree-container {
+  padding: 1.5rem;
+}
+
+.tree-node {
+  margin-left: 1.5rem;
+  border-left: 1px solid var(--border-glass);
+  padding-left: 0.5rem;
+}
+
+.tree-node-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.tree-node-content:hover {
+  background: var(--bg-glass);
+  color: var(--text-primary);
+}
+
+.tree-node-content.leaf {
+  cursor: default;
+  margin-left: 1.5rem;
+}
+
+.tree-node-content.leaf:hover {
+  background: transparent;
+}
+
+.tree-icon {
+  color: var(--accent-primary);
+}
